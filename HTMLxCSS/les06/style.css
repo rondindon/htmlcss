@@ -11,6 +11,7 @@ h1 {
     font-size: 100px;
     font-family: 'Times New Roman', Times, serif;
     padding: 100px 0px 50px 0px;
+    background: plum;
 }
 
 h2{
@@ -36,3 +37,10 @@ a:hover {
     background: greenyellow;
     color: black;
 }
+
+*{
+    outline: 3px solid black;
+}
+body{
+    margin: 0px;
+} /* CSS RESET */
