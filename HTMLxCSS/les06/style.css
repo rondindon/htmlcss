@@ -18,10 +18,15 @@ h2{
     display: none;
 }
 
-p{
-    line-height: 22px;
+.main {
     width: 50%;
     margin: 50px auto;
+}
+
+p{
+    line-height: 22px;
+    margin-top: 44px;
+
 }
 
 a{
@@ -29,8 +34,12 @@ a{
     background: midnightblue;
     text-decoration: none;
     padding: 2px 6px 3px 6px;
-    border-radius: 5px;
+    border-radius: 3px;
     font-weight: bold;
+    display: inline-block; /* block ostava v riadku  a da sa menit height width margin ... */
+    width: 200px;
+    height: 60px;
+    margin-bottom: 20px;
 }
 
 a:hover {
@@ -38,9 +47,33 @@ a:hover {
     color: black;
 }
 
-*{
-    outline: 3px solid black;
-}
 body{
     margin: 0px;
 } /* CSS RESET */
+
+.special {
+    border-radius: 20px;
+    background: plum;
+    color: black;
+    width: 300px;
+    height: 70px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 20px solid greenyellow;
+    overflow: auto;
+}
+
+.highlight{
+    color: lemonchiffon;
+}
+strong{
+    display: block;
+}
+.text-left{
+    text-align: left;
+}
+small{
+    font-weight: bold;
+    color: blanchedalmond;
+    display: block;
+}
