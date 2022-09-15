@@ -1,0 +1,27 @@
+body,html{
+    margin: 0;
+}
+
+body{
+    color: blueviolet;
+    font-family: monospace;
+    background-color: #f7d6e0;
+    padding: 0 50px;
+}
+
+p{
+    font-size: 50px;
+    line-height: 2;
+}
+
+strong{
+    color: #B2F7EF;
+    font-style: oblique;
+}
+strong:hover{
+    color: #f0fdfc;
+}
+
+.strooong:hover{
+    color: #28e9d2;
+}
