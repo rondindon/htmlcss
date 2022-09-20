@@ -1,0 +1,37 @@
+body,html{
+    margin: 0;
+}
+
+body{
+    color: blueviolet;
+    font-family: monospace;
+    background-color: #f7d6e0;
+    padding: 0 50px;
+    text-align: justify;
+}
+
+p{
+    font-size: 50px;
+    line-height: 2;
+    text-indent: 300px;
+}
+
+strong{
+    color: #B2F7EF;
+    font-style: oblique;
+    font-weight: 50;
+    font-variant: small-caps;
+    text-decoration: overline;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 0px violet,3px 3 px 0px #f0fdfc;
+}
+strong:hover{
+    color: #f0fdfc;
+    text-transform: uppercase;
+    text-decoration: underline;
+    word-spacing: 5px;
+}
+
+.strooong:hover{
+    color: #28e9d2;
+}

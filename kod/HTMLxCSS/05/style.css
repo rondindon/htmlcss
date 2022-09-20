@@ -1,0 +1,58 @@
+body{
+    width: 600px;
+    background-color: rgb(110, 78, 56);
+    padding: 50px;
+}
+
+.important {
+    color: cornsilk;
+}
+
+h1,h2{
+    font-family:'Lucida Grande';
+    margin: 0px;
+}
+h1{
+    font-size: 77px;
+}
+h2 {
+    color:teal;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+p{
+    color: aqua;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 15px;
+}
+
+#gay{
+    color: darksalmon;
+}
+
+.controls {
+    text-align: center;
+}
+
+.btn {
+    font-size: 22px;
+    border: 3px solid silver;
+    border-radius: 12px;
+    padding: 7px 18px;
+    background-color: burlywood;
+    text-decoration: none;
+}
+
+.btn-success {
+    color: aquamarine;
+    background-color: forestgreen;
+    border: 1px solid darkslategrey;
+}
+
+.btn-danger {
+    color: red;
+    background-color: black;
+    border: 1px dotted whitesmoke;
+}
