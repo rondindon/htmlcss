@@ -24,6 +24,18 @@ p{
     margin: 0 0 24px 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .logo {
     margin: 0px;
     margin-top: -15px;
@@ -97,6 +109,36 @@ a:hover,a:focus{
     font-style: italic;
 }
 
+
+/* STYLE V HTML ESTE SILNEJSI */
+
+#hovno {
+    background: plum;
+}
+
+/* ID silnejsie jak classa */
+
+.post-meta{
+    background: orange;
+}
+
+/* CLASS silnejsia jak p */
+
+p {
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .post-meta time::before{
     content: " ---- ";
     font-style: normal;
@@ -119,6 +161,21 @@ a:hover,a:focus{
     margin: 0;
 }
 
+
+[id] {
+    background: honeydew;
+    /* overflow hiiden,auto    clear both*/
+}
+
+
+
+
+
+
+
+
+
+
 .post-content p,
 .post-content h2,
 .post-content h3 {
@@ -126,7 +183,7 @@ a:hover,a:focus{
     margin-right: 150px;
 }
 
-.post-content p:first-child {
+.post-content p:first-child {  /* MOZE BYT FIRST OF TYPE */
     font-size: 30px;
     line-height: 38px;
     margin-left: 0;
@@ -153,7 +210,7 @@ a:hover,a:focus{
 
 
 .float-left {
-    float: left;
+    float: left; /* VYTRHNUTIE Z DOKUMENTU */
 }
 
 .float-right {
@@ -200,11 +257,11 @@ a:hover,a:focus{
     margin: 60px auto;
 }
 
-.post-footer h3{
+.post-footer h3{        /* VSETKY H3 V POST-FOOTER*/
     font-size: 15px;
 }
 
-.post-footer > h3 {
+.post-footer > h3 {   /* PRIAMY POTOMOK */
     text-align: center;
 }
 
@@ -252,8 +309,8 @@ a:hover,a:focus{
     position: relative;
 }
 
-.reviews li::before{
-    content: '"';
+.reviews li::before{    /* VLOZENE PRED TEXT ,AFTER VLOZENE ZA TEXT */
+    content: '"';       
     color: aquamarine;
     font-size: 60px;
     font-style: italic;
@@ -294,4 +351,67 @@ a:hover,a:focus{
     background: gray;
     color: black;
     text-shadow: none;
+}
+
+
+
+
+
+
+
+
+[id] {   /* VSETKY IDCKA */
+    background: honeydew;
+    /* overflow hiiden,auto    clear both*/
+}
+
+
+
+
+.group::before,
+.group::after {
+    content: " ";
+    display: table;
+}
+
+/* DOLEZITE NA LAYOUT  ,,  CONTAINOVANIE FLOATOV*/
+
+.group::after {
+    clear: both;
+}
+
+.group {
+    *zoom: 1;
+}
+
+code {
+    color: bisque;
+    background: plum;
+    display: block;
+    padding: 25px;
+    font-size: 24px;
+    font-family: monospace;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#wrapper header,
+#wrapper section,
+#wrapper aside,
+#wrapper footer {
+    margin: 0 0 25px 0;
+}
+
+#wrapper section {
+    float: left;
+    width: 425px;
+}
+#wrapper aside {
+    float: right;
+    width: 250px;
 }

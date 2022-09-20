@@ -1,0 +1,19 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header a {
+    font-size: 20px;
+    margin: 0px 20px 0px 15px;
+    text-decoration: none;
+
+    color: black;
+}
+
+.logo a{
+    background: url(img/sneha_logo.svg) 50% 50px no-repeat;
+    display: block;
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+}
