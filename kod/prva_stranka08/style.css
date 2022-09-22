@@ -1,6 +1,7 @@
 body{
     width: 1000px;
     margin: 0 auto;
+    background:  linear-gradient(0deg, rgba(123,190,134,1) 0%, rgba(137,190,125,1) 26%, rgba(105,129,88,1) 93%);
     color: black;
     font-size: 18px;
     padding: 0px 20px;
@@ -20,9 +21,9 @@ a{
     text-decoration: none;
 }
 
-p{
+/*p{
     margin: 0 0 24px 0;
-}
+}*/
 
 
 
@@ -38,9 +39,19 @@ p{
 
 .logo {
     margin: 0px;
-    margin-top: -15px;
-    position: relative;
-    z-index: 2;
+    position: relative;  /* RELATIVE IBA VIZUALNE POSUVAM VECI */
+    z-index: 2;          
+
+
+    top: -7px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+
+
+
 }
 a:hover,a:focus{
     text-decoration: underline;
@@ -53,7 +64,14 @@ a:hover,a:focus{
     height: 105px;
 }
 .cover{
-    background: white url(img/background.jpg) 50% 50px no-repeat;
+    /*background: white url(img/background.jpg) 50% 50px no-repeat;*/
+
+    background-color: white;
+    background-image: url(img/background.jpg);
+    background-position: 50% 0; /* LEFT TOP , RIGHT BOTTOM , CENTER CENTER ..*/
+    background-repeat: no-repeat;
+
+
     width: 300px;
     height: 300px;
     margin-top: -150px;
@@ -124,7 +142,7 @@ a:hover,a:focus{
 
 /* CLASS silnejsia jak p */
 
-p {
+*/p {
     background: white;
 }
 
@@ -226,7 +244,7 @@ p {
     margin: 24px 50px 24px 0px;
 }
 
-.pullquote.float-left {
+.pullquote.float-right {
     margin: 24px 0px 24px 50px;
 }
 
@@ -234,6 +252,7 @@ p {
     font-size: 24px;
     line-height: 30px;
     font-style: italic;
+    visibility: hidden;
 }
 
 .pullquote ol,
@@ -255,6 +274,13 @@ p {
 .post-footer{
     width: 700px;
     margin: 60px auto;
+    background: blue;
+    z-index: 10;
+    position: absolute;
+    margin: 60px auto;
+
+    left: 50%;
+    margin-left: -350px; /* POLOVICA ELEMENTU A POZICIA BUDE V STREDE */
 }
 
 .post-footer h3{        /* VSETKY H3 V POST-FOOTER*/
@@ -360,10 +386,7 @@ p {
 
 
 
-[id] {   /* VSETKY IDCKA */
-    background: honeydew;
-    /* overflow hiiden,auto    clear both*/
-}
+
 
 
 
@@ -395,9 +418,14 @@ code {
     text-align: center;
 }
 
+header code {background: red;}
+footer code {background: blue;}
+aside code {background: green;}
+
 #wrapper {
     width: 700px;
-    margin: 0 auto;
+    margin: 50px auto;
+    position: relative;  /* POZICIA V RODICOVI */
 }
 
 #wrapper header,
@@ -405,13 +433,32 @@ code {
 #wrapper aside,
 #wrapper footer {
     margin: 0 0 25px 0;
+    opacity: 0.8; /* PRIESVISTNOST */
 }
 
 #wrapper section {
     float: left;
     width: 425px;
+    position: relative;
+    bottom: 70px;
+
+    z-index: 4;
 }
 #wrapper aside {
     float: right;
     width: 250px;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    /* position: absolute;  JAK MA RODIC POSITION:RELATIVE TAK JE RELATIVNY K RODICOVY */
+
+
+    z-index: 1;
 }
+
+#wrapper header {
+    position: relative;
+    z-index: 3;  /* ELEMENT MUSI MAT POSITION A VYSIE CISLO JE NAD NIZSIM*/
+}
+
+/*position: fixed; ELEMENT SCROLLUJE */
