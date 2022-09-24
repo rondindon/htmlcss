@@ -1,0 +1,65 @@
+
+body {
+    color: black;
+    font: normal 18px/30px monospace;
+}
+
+
+
+.container {
+    width: 760px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-1 {
+    color: #c7e22f;
+    background: #b7b7a4;
+}
+.section-2 {
+    background: #a5a58d;
+}
+.section-3 {
+    background: #6b705c;
+}
+
+input:not([type='radio'],[type='checkbox'],[type='file']),
+button,
+textarea {
+    background: #fff;
+    border: none;
+    width: 300px;
+    padding: 15px 20px;
+    margin: 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid plum;
+}
+
+textarea {
+    width: 675px;
+}
+
+button{
+    color: #c7e22f;
+    background: #b7b7a4;
+}
+
+label {
+    cursor: pointer;
+    display: block;
+    text-align: left;
+    margin-left: 25px;
+}
+
+label[for='pamataj'] {
+    margin-bottom: 25px;
+}

@@ -199,6 +199,7 @@ a:hover,a:focus{
 .post-content h3 {
     margin-left: 150px;
     margin-right: 150px;
+    position: relative;
 }
 
 .post-content p:first-child {  /* MOZE BYT FIRST OF TYPE */
@@ -273,11 +274,13 @@ a:hover,a:focus{
 
 .post-footer{
     width: 700px;
+    height: 200px;
     margin: 60px auto;
     background: blue;
     z-index: 10;
     position: absolute;
-    margin: 60px auto;
+    margin: 0 auto;
+    bottom: -1020px;
 
     left: 50%;
     margin-left: -350px; /* POLOVICA ELEMENTU A POZICIA BUDE V STREDE */
@@ -298,6 +301,8 @@ a:hover,a:focus{
 .photo img {
     border-radius: 50%;
     border: 10px  solid grey;
+    margin-right: 10px;
+    margin-left: 5px;
 }
 
 .byline h3,
@@ -462,3 +467,19 @@ aside code {background: green;}
 }
 
 /*position: fixed; ELEMENT SCROLLUJE */
+
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list li {
+    margin-bottom: 5px;
+}
+
+.list li::before {
+    content: '✦';
+    color: orchid;
+    margin-right: 10px;
+    /* top: 1px; */
+}
