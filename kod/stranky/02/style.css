@@ -1,0 +1,170 @@
+
+/* GENERAL */
+
+body {
+    color: #323232;
+    background: #eeefed;
+    font-family: monospace;
+}
+
+.container::before,
+.group::before,
+.menu::before,
+.container::after,
+.group::after,
+.menu::after {
+    content: " ";
+    display: table;
+}
+
+.container::after,
+.group::after,
+.menu::after {
+    clear: both;
+}
+
+.container,
+.group,
+.menu {
+    *zoom: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.menu {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.menu li {
+    float: left;
+}
+
+.fa {
+    vertical-align: middle;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+ /* CONTACT */ 
+
+.contact-bar,
+.personal a {
+    color: whitesmoke;
+}
+
+
+
+ .contact-bar {
+    background: #39a3d4;
+    height: 84px;
+    font-size: 14px;
+ }
+
+ .personal {
+    float: left;
+    margin-top: 29px;
+ }
+
+ .social {
+    float: right;
+    margin-top: 18px;
+ }
+
+ .personal li {
+    margin-right: 70px;
+ }
+
+ .personal .fa {
+    font-size: 28px;
+    margin-right: 5px;
+ }
+
+ .social .fa {
+    font-size: 17px;
+ }
+
+ .social-icon {
+    display: block;
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+
+    color: #989898;
+    background: #eeefed;
+    text-align: center;
+
+    border-radius: 2px;
+    margin-left: 2px;
+    
+ }
+
+ .social-icon:hover,
+ .social-icon:focus {
+    color: whitesmoke;
+    background: #5bd;
+ }
+
+
+
+ /* NAVIGATION */
+
+ .nav-bar {
+    background: #f2f2f2;
+ }
+
+ .logo {
+    float:left ;
+ }
+
+ .logo a {
+    display: block;
+    background: url(img/logo.png) 0 0 no-repeat;
+    width: 186px;
+    height: 31px;
+    text-indent: -9999px;
+    margin-top: 24px;
+ }
+
+ .navigation {
+    float: right;
+ }
+
+ .navigation .fa {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.navigation li {
+    border-left: 1px solid #cecece;
+}
+
+.navigation li:last-child {
+    border-right: 1px solid #cecece;
+}
+
+ .navigation a {
+    color: #a6a6aa;
+    display: block;
+    width: 136px;
+    height: 120px;
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+ .selected a,
+ .navigation a:hover,
+ .navigation a:focus {
+    color: #de5728;
+ }
