@@ -1,0 +1,119 @@
+body,
+html {
+    width: 1024px;
+    height: 960px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body {
+    border: 2px solid blueviolet;
+    padding: 15px 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.logo a {
+    display: block;
+    background: url(img/v286-aew-099-health-logo-new.jpg) 0 0 no-repeat;
+    text-indent: -9999px;
+    float: left;
+
+    width: 250px;
+    height: 250px;
+
+    margin-top: 20px;
+
+}
+.fa {
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.menu li{
+    list-style: none;
+}/*
+
+.nav-bar {
+    float: right;
+}
+
+.nav-bar .fa {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.nav-bar li {
+    border-left: 1px solid #cecece;
+}
+
+.nav-bar li:last-child {
+    border-right: 1px solid #cecece;
+}
+
+ .nav-bar a {
+    color: #a6a6aa;
+    display: block;
+    width: 136px;
+    height: 90px;
+    text-align: center;
+    text-transform: uppercase;
+ }*/
+
+ .navigation {
+    float: right;
+ }
+
+ .navigation .fa {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.navigation li {
+    border: 1px solid #cecece;
+}
+
+ .navigation a {
+    color: #a6a6aa;
+    display: block;
+    width: 136px;
+    height: 90px;
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+ .section-1 {
+    width: 40%;
+    height: 500px;
+    float: left;
+ }
+
+ .section-2 {
+    width: 50%;
+    height: 500px;
+    float: right;
+ }
+
+ .section-3 {
+    display: block;
+    width: 100%;
+ }
+
+ .clearfix {
+    overflow: hidden;
+ }
+
+ .footer {
+    width: 100%;
+    margin-top: 50px;
+ }
+
