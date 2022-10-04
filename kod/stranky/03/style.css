@@ -1,0 +1,62 @@
+body {
+    background-color: midnightblue;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 1024px;
+    height: 960px;
+    border: 1px solid white;
+}
+
+h1 {
+    margin: 0;
+    height: 37px;
+}
+
+.left {
+    float: left;
+    text-align: center;
+    border: 1px solid khaki;
+    margin: 3px;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+nav {
+    margin-top: 10px;
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+
+.one {
+    width: 49%;
+}
+
+header {
+    margin: 20px;
+    border: 1px solid yellow;
+    padding: 15px;
+}
+
+.one p {
+    height: 100%;
+}
+
+.last {
+    margin: 10px;
+    border: 1px solid greenyellow;
+}
+
+main {
+    margin: 15px;
+    border: 1px solid aquamarine;
+}
+
+footer {
+    margin: 15px;
+    border: 1px solid aquamarine;
+}
