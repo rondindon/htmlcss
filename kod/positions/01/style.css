@@ -1,0 +1,39 @@
+body {
+    background-color: #23232a;
+    font-family: monospace;
+}
+
+.parent {
+    font-size: 50px;
+    background-color: whitesmoke;
+    padding: 15px;
+}
+
+.child {
+    padding: 10px;
+}
+
+.child-one {
+    background-color: aquamarine;
+}
+
+.child-two {
+    background-color:antiquewhite;
+}
+
+.child-three {
+    background-color: blueviolet;
+}
+
+
+
+
+.parent {
+    position: relative;
+    height: 200vh;
+}
+
+.child-one {
+    position: sticky; /* pri scrolle zostane hore s block sirkou a fixed s inline block sirkou */
+    top: 0;  
+}

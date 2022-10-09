@@ -1,0 +1,30 @@
+body {
+    background-color: #23232a;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px,auto);
+
+    gap: 20px;
+
+    /*justify-content: space-around;
+    align-content: stretch;
+    height: 100vh;*/
+
+    justify-items: stretch;
+    align-items: stretch;
+
+    margin: 20px;
+}
+
+.grid-item-1 {
+    align-self: start;
+    justify-self: center;
+}
+
+.grid-item{
+    border: 1px solid white;
+    background-color: #2323a3;
+}
