@@ -1,0 +1,70 @@
+main {
+    background: linear-gradient(0deg, rgba(35,35,35,1) 42%, rgba(152,251,152,0.41220238095238093) 63%, rgba(35,35,35,1) 82%);
+    padding: 4rem 0 0 0;
+    position: relative;
+}
+
+.feature {
+    margin-bottom:0;
+}
+
+.feature h2 {
+    color: var(--cl-accent);
+    text-shadow: rgba(179, 105, 105, .35) 3px 2px 3px;
+}
+
+.feature:not(.wishlist) .content {
+    position: relative;
+    bottom: 2rem;
+}
+
+.wishlist iframe {
+    min-height: 190px;
+    width: min(646px, 100%);
+    margin-top: 1rem;
+}
+
+@media screen and (min-width:810px){
+
+    main {
+        padding: 10rem 0 ;
+    }
+    
+    .feature {
+        display: flex;
+        align-items: center;
+
+        gap: 3vw;
+
+        margin-bottom: 10rem ;
+        padding: 1rem 0;
+
+        border-right: 0.75rem solid var(--cl-accent);
+    }
+
+    .feature:nth-child(even){
+        flex-direction: row-reverse;
+        border-left: 0.75rem solid var(--cl-accent);
+        border-right: none;
+    }
+
+    .feature figure {
+        flex: 7;
+    }
+
+    .feature .content {
+        flex: 3;
+        position: static;
+        padding: 0 2rem;
+    }
+
+    .feature:not(.wishlist) .content {
+        position: static;
+    }
+
+   .main-nav .steam {
+
+    display: inline-block;
+   }
+
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="triangle.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>HADES</title>
+</head>
+<body id="crave">
+    
+    <nav class="main-nav">
+        <ul class="menu container">
+            <li><a href="#crave">Hades</a></li>
+            <li><a href="#game">Game</a></li>
+            <li><a href="#aboutus">About us</a></li>
+            <li><a href="#wishlist">Wishlist now
+                <img class="steam" src="img/steam.png" alt=""></a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <div>
+            <img class="char" src="img/hadess.png" alt="">
+        </div>
+
+        <div class="logo container">
+            <img src="img/Hades_logo.png" alt="">
+        </div>
+
+    </header>
+    <main>
+        <section class="features container">
+
+            <article id="game" class="feature">
+                <figure>
+                    <a href="img/hades1.jpg" target="_blank" rel="noopener noreferrer">
+                        <img class="green-shadow" src="img/hades1.jpg" alt="screenshot">
+                    </a>
+                </figure>
+
+                <div class="content">
+                    <h2>Sniff</h2>
+                    <h3>Track down paling memories.</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam porro quasi, harum necessitatibus dolor sint, earum quidem officia voluptatem quis ea? Ipsa beatae corporis iste harum! Consequatur dolore sapiente reiciendis!
+                    </p>
+                </div>
+            </article>
+
+            <article class="feature">
+                <figure>
+                    <a href="img/hades2.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="img/hades2.jpg" alt="screenshot">
+                    </a>
+                </figure>
+
+                <div class="content">
+                    <h2>Urinate</h2>
+                    <h3>Claim territories.</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam porro quasi, harum necessitatibus dolor sint, earum quidem officia voluptatem quis ea? Ipsa beatae corporis iste harum! Consequatur dolore sapiente reiciendis!
+                    </p>
+                </div>
+            </article>
+
+            <article class="feature">
+                <figure>
+                    <a href="img/hades3.jpg" target="_blank" rel="noopener noreferrer">
+                        <img class="red-shadow" src="img/hades3.jpg" alt="screenshot">
+                    </a>
+                </figure>
+
+                <div class="content">
+                    <h2>Devour</h2>
+                    <h3>Draw out ceaseless hunger.</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam porro quasi, harum necessitatibus dolor sint, earum quidem officia voluptatem quis ea? Ipsa beatae corporis iste harum! Consequatur dolore sapiente reiciendis!
+                    </p>
+                </div>
+            </article>
+
+            <article id="wishlist" class="feature wishlist">
+                
+                <div class="content">
+                    <h2>Wishlist on <br> steam</h2>
+                    <iframe src="https://store.steampowered.com/widget/1145360/" frameborder="0" width="646" height="190"></iframe>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer id="aboutus">
+        <div class="us container">
+
+            <form action="" class="footer-item newsletter">
+                <h2>subcribe to <br>the hovno <br>z makoim</h2>
+
+                <input type="email" placeholder="email address" id="">
+                <button type="submit">subscribe</button>
+            </form>
+            <div class="footer-item discord">
+                <h2>join<br> our<br> discord</h2>
+                <a href=""><img src="img/discord.png" alt=""></a>
+            </div>
+
+            <ul class="footer-item contact menu">
+                <li><a href="#">presskit</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">discord</a></li>
+                <li><a href="#">twitter</a></li>
+            </ul>
+
+            <div class="footer-item logos">
+                <img src="img/l1.png" class="apple" alt="">
+                <img src="img/l2.png" class="lays" alt="">
+                <img src="img/l3.png" class="spotify" alt="">
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+
+        const headerEl = document.querySelector('header')
+        const logoEl = document.querySelector('logo')
+        const charEl = document.querySelector('char')
+
+        const setTranslate = (xPos,yPos,el) => {
+            el.style.transform = 'translate3d(${xPos},${yPos}px,0)';
+        }
+
+        let xScrollPosition;
+        let yScrollPosition;
+
+        const scrollLoop = () => {
+            xScrollPosition = window.scrollX;
+            yScrollPosition = window.scrollY;
+
+            setTranslate(0 , yScrollPosition * 0.75, headerEl);
+            setTranslate(0 , yScrollPosition * -0.25, logoEl);
+            setTranslate(0 , yScrollPosition * -0.25, charEl);
+
+            requestAnimationFrame(scrollLoop);
+        }
+
+        window.addEventListener('DOMContentLoaded',scrollLoop,false);
+
+    </script>
+
+</body>
+</html>

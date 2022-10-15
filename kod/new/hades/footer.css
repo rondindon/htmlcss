@@ -1,0 +1,108 @@
+footer {
+    background-color: #232323;
+}
+
+.us {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.footer-item {
+    margin: 0;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.footer-item {
+    padding: 0 0 0 4rem;
+    text-transform: uppercase;
+}
+
+.apple {
+    max-width: 5rem;
+}
+
+.lays {
+    max-width: 8rem;
+}
+
+.spotify {
+    max-width: 14rem;
+}
+
+.contact a {
+    text-decoration: underline;
+}
+
+.newsletter h2,
+.discord h2 {
+    margin-bottom: 2rem;
+}
+
+.discord h2 {
+    margin-bottom: 1.6rem;
+}
+
+.newsletter input,
+.newsletter button {
+    border: none;
+    background: whitesmoke;
+    min-height: 3rem;
+    padding: 0.2rem 1rem 0 1rem;
+}
+
+.newsletter button {
+    background-color: var(--cl-accent);
+    margin-left: 0.5rem;
+}
+
+.newsletter input {
+    width: clamp(10rem , 20vw , 16rem);
+}
+
+
+.discord a {
+    display: inline-block;
+    width: 15rem;
+    padding: 0.65rem 1rem;
+
+    background-color: var(--cl-accent);
+    text-align: center;
+}
+
+.discord img {
+    width: 8rem;
+    vertical-align: middle;
+    position: relative;
+    top: 2px;
+}
+
+
+@media screen and (min-width: 810px){
+    .us {
+        text-align: start;
+        display: grid;
+
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .footer-item {
+        padding: 8rem 0
+    }
+
+    .logos {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .logos,
+     .contact{
+        padding-bottom: 2rem;
+        align-self: end;
+    }
+    button {
+        cursor: pointer;
+    }
+
+}

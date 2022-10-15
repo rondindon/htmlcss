@@ -1,0 +1,78 @@
+:root {
+    --bg-secondary: #232323;
+    --cl-accent: #f04175;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-kerning: auto;
+}
+
+html {
+    font-style: 100%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+body {
+    color: palegreen;/*152 251 152*/
+    text-shadow: 1px 1px 1px palegreen;
+    font-family: monospace;
+    background: black;
+    margin: 0;
+}
+
+b, 
+strong {
+    font-weight: bolder;
+}
+
+a {
+    color: inherit;
+    background-color: transparent;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    line-height: 1;
+}
+
+article h2,
+article h3 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: clamp(1.75rem,6vw,2rem);
+}
+
+h3 {
+    font-size:clamp(1.75rem,4.2vw,2.5rem);
+}
+
+p {
+    font-size: 1.25rem;
+    margin: 1rem 0 0 0;
+}
+
+.container {
+    padding: 0 1.25rem;
+    max-width: 1170px;
+    margin: 0 auto;
+}

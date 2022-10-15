@@ -1,19 +1,41 @@
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.header a {
+* {
+    font-family: monospace;
     font-size: 20px;
-    margin: 0px 20px 0px 15px;
-    text-decoration: none;
-
-    color: black;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:#323232;;
 }
 
-.logo a{
-    background: url(img/sneha_logo.svg) 50% 50px no-repeat;
-    display: block;
-    width: 200px;
-    height: 150px;
-    margin: 0 auto;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 30px 10%;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.nav_links li:last-child {
+    padding-left:22em;
+}
+
+
+.nav_links li a{
+    text-decoration: none;
+    color: #232323;
+}
+
+.logo {
+    cursor: pointer;
+    width: 300px;
 }

@@ -1,0 +1,93 @@
+header {
+    min-height: 100vh;
+    background-image: url(img/header.jpg);
+
+    background-repeat: no-repeat;
+
+    background-position: 20% 40%;
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+}
+
+.char {
+    position: absolute;
+    right: 0;
+    top: 320px;
+    text-align: left;
+}
+.logo {
+    width: clamp(30rem,35rem,40rem);
+}
+
+.main-nav {
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 3;
+    background-color: rgba(35, 35, 35, .9);
+}
+
+.main-nav ul {
+    display: flex;
+    padding: 15px 0;
+
+    line-height: 1;
+
+    font-size: clamp(1.1rem, 4vw, 2rem);
+    gap: clamp(0.7rem, 4vw, 2rem);
+
+    list-style: none;
+}
+
+.main-nav li{
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: var(--cl-accent);
+    transition: all 0.3s ease 0s;
+    text-shadow: 1px 1px 1px var(--cl-accent);
+}
+
+.menu li:last-child{
+    margin-left: auto;
+}
+
+.main-nav .steam {
+    width: 2em;
+    padding-left: 10px;
+    vertical-align: middle;
+
+    display: none;
+}
+
+@media screen and (min-width: 840px) {
+    .main-nav .steam {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .char{
+        top: 500px;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+
